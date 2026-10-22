@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#D9D6CD"/>
+
+  <g fill="#1C1A17">
+    <path d="M164 148 L348 148 L294 224 L218 224 Z"/>
+    <path d="M198 224
+             L314 224
+             L326 246
+             C342 274 348 300 342 326
+             C336 350 312 364 256 364
+             C200 364 176 350 170 326
+             C164 300 170 274 186 246
+             Z"/>
+    <path d="M336 262 C374 264 394 290 383 320 C376 340 352 349 331 344"
+          fill="none" stroke="#1C1A17" stroke-width="13" stroke-linecap="round"/>
+  </g>
+
+  <text x="256" y="430" text-anchor="middle" font-family="Georgia, 'Hiragino Mincho ProN', serif" font-weight="700" font-size="52" letter-spacing="1" fill="#1C1A17">Drip QC</text>
+</svg>

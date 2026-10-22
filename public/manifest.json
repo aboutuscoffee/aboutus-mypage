@@ -1,0 +1,21 @@
+{
+  "name": "About Us Coffee",
+  "short_name": "Private",
+  "description": "About Us Coffee 私専用ホーム",
+  "start_url": "/aboutus-mypage/",
+  "display": "standalone",
+  "background_color": "#f3f1f8",
+  "theme_color": "#6c8ace",
+  "icons": [
+    {
+      "src": "/aboutus-mypage/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/aboutus-mypage/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
