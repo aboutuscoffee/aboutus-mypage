@@ -27,10 +27,16 @@ jobs:
 
       - run: npm ci
 
+      # SHA-256ハッシュ（64桁の16進）以外が登録されていたら、平文が公開されないよう空にする
       - name: Build
-        run: npm run build
+        run: |
+          if [[ ! "$RAW_HASH" =~ ^[0-9a-f]{64}$ ]]; then
+            echo "::warning::VITE_PASSWORD_HASH がSHA-256ハッシュではないため無視しました"
+            RAW_HASH=""
+          fi
+          VITE_PASSWORD_HASH="$RAW_HASH" npm run build
         env:
-          VITE_PASSWORD_HASH: ${{ secrets.VITE_PASSWORD_HASH }}
+          RAW_HASH: ${{ secrets.VITE_PASSWORD_HASH }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
