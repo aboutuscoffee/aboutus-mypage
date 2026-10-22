@@ -4,8 +4,8 @@
   "description": "About Us Coffee 私専用ホーム",
   "start_url": "/aboutus-mypage/",
   "display": "standalone",
-  "background_color": "#f3f1f8",
-  "theme_color": "#6c8ace",
+  "background_color": "#f5f8ef",
+  "theme_color": "#a8cc80",
   "icons": [
     {
       "src": "/aboutus-mypage/icon-192.png",

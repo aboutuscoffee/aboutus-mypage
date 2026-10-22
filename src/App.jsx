@@ -134,7 +134,7 @@ function Lock({ onUnlock }) {
   };
 
   return (
-    <div className="min-h-screen bg-[#f3f1f8] flex flex-col items-center justify-center px-4">
+    <div className="min-h-screen bg-[#f5f8ef] flex flex-col items-center justify-center px-4">
       <img
         src={`${import.meta.env.BASE_URL}icon-192.png`}
         alt=""
@@ -150,12 +150,12 @@ function Lock({ onUnlock }) {
           }}
           placeholder="パスワード"
           autoFocus
-          className="w-full rounded-xl border border-[#c9c3dd] bg-white px-4 py-3 text-[#2f2b3a] outline-none focus:border-[#7f8ccc]"
+          className="w-full rounded-xl border border-[#cfdcbc] bg-white px-4 py-3 text-[#2f3a2b] outline-none focus:border-[#7fae5e]"
         />
         {error && <p className="text-xs text-[#b0607a] text-center">パスワードが違います</p>}
         <button
           type="submit"
-          className="w-full rounded-xl bg-gradient-to-br from-[#6c8ace] to-[#a684c4] py-3 text-white font-bold active:scale-95 transition"
+          className="w-full rounded-xl bg-gradient-to-br from-[#b5d68c] to-[#8fbf72] py-3 text-white font-bold active:scale-95 transition"
         >
           ひらく
         </button>
@@ -170,16 +170,16 @@ export default function App() {
   if (!unlocked) return <Lock onUnlock={() => setUnlocked(true)} />;
 
   return (
-    <div className="min-h-screen bg-[#f3f1f8] flex flex-col items-center px-4 py-10">
+    <div className="min-h-screen bg-[#f5f8ef] flex flex-col items-center px-4 py-10">
       <div className="text-center mb-8">
-        <p className="text-2xl font-bold text-[#2f2b3a]">About Us Coffee</p>
-        <p className="text-sm text-[#6f6a8a] mt-1">Private</p>
+        <p className="text-2xl font-bold text-[#2f3a2b]">About Us Coffee</p>
+        <p className="text-sm text-[#6f7f66] mt-1">Private</p>
       </div>
 
       <div className="w-full max-w-sm flex flex-col gap-8">
         {SECTIONS.map((section) => (
           <section key={section.title}>
-            <p className="text-xs font-bold tracking-wider text-[#7f8ccc] mb-3">{section.title}</p>
+            <p className="text-xs font-bold tracking-wider text-[#7fae5e] mb-3">{section.title}</p>
             <div className="grid grid-cols-3 gap-x-3 gap-y-5">
               {section.apps.map((app) => (
                 <a
@@ -192,10 +192,10 @@ export default function App() {
                     alt={app.name}
                     className="w-16 h-16 rounded-2xl shadow-md"
                   />
-                  <span className="text-xs font-bold text-[#2f2b3a] text-center leading-tight">
+                  <span className="text-xs font-bold text-[#2f3a2b] text-center leading-tight">
                     {app.name}
                   </span>
-                  <span className="text-[10px] text-[#6f6a8a] text-center leading-tight">
+                  <span className="text-[10px] text-[#6f7f66] text-center leading-tight">
                     {app.desc}
                   </span>
                 </a>
