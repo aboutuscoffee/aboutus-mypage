@@ -28,6 +28,12 @@ const SECTIONS = [
         desc: "お菓子の仕込みスケジュール",
         url: "https://aboutuscoffee.github.io/aboutus-okashi-scheduler/",
       },
+      {
+        icon: "icon-freezer-stock.svg",
+        name: "冷凍庫在庫",
+        desc: "仕込んだお菓子の在庫",
+        url: "https://aboutuscoffee.github.io/aboutus-freezer-stock/",
+      },
     ],
   },
   {
