@@ -34,6 +34,12 @@ const SECTIONS = [
         desc: "仕込んだお菓子の在庫",
         url: "https://aboutuscoffee.github.io/aboutus-freezer-stock/",
       },
+      {
+        icon: "icon-events.svg",
+        name: "イベント出店",
+        desc: "イベント出店の管理",
+        url: "https://aboutus-events.yuka-k-aboutuscoffee.workers.dev/",
+      },
     ],
   },
   {
